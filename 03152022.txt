@@ -1,0 +1,27 @@
+C program vs Java program
+C: Fast, prerequisite is low
+Java: Slow, requires bigger OS + Java VM (Not good for small devices.)
+C program directly manipulates memory (powerful but not secure.)
+int * p = &a; 		      /*declare a pointer-type
+printf("%ld", (long)(p));     of variable named p, initialize
+*p = 3;                 	to variable a. in a declaration "*"
+printf("%i", (*p));           stands for pointer type. "*" also means "de-reference",
+                 			retrieving the value at the memory location, using the
+                 			Syntax *p. */
+output:
+140735738981660
+3
+
+140 billion(140 TB)
+
+p = (int*)malloc(100*sizeof(int)); 
+printf("%i\n", p[0]);
+printf("%i\n", p[100]); // out of bounds throw error or throws 0
+OUTPUT:
+0
+
+malloc(dynamic memory allocation)
+*(p+66)=p[66] //stands for starting at p, offset 66 position, 
+		  read the value at new location
+java equivalent:
+p = new int[100];
